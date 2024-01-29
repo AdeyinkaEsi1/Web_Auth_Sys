@@ -29,9 +29,22 @@
         <h1>THANKS FOR THE FORM</h1>
         <hr>
         <br>
+
+    <table>
+      
+        
+        <tr>
+        <th>First Names</th>
+        <th>Last Nmaes</th>
+        </tr>
         {% for item in all %}
-            <p>{{ item.fname }} {{ item.lname }}</p>
+        <tr>
+        <td>{{ item.fname }}</td> 
+        <td>{{ item.lname }}</td>
+        </tr>
         {% endfor %}
+
+    </table>
 
         
     {% endblock %}
